@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-input</title>
+  </head>
+  <body>
+    <form method="post" action="/login">
+      <input type="text" /> <br />
+      <input type="number" /> <br /><br />
+      <input type="email" /> <br />
+      <input type="password" /> <br />
+      <input type="search" /> <br />
+      <input type="url" /> <br />
+      <input type="tel" /> <br />
+      <input type="time" /> <br />
+      <input type="hidden" /> <br />
+      <br />
+      <input type="button" value="Kaydet" /><br>
+
+      <input type="button" value="Custom">
+      <input type="submit" value="Save">
+      <input type="reset" value="Reset"> <br>
+
+
+      <!-- 17.03.2023 burdan devam -->
+      <input type="checkbox" name="user" id="usr" >
+      <label for="usr"> Kullanıcı sözleşmesini okudum ve onaylıyorum</label>
+<!-- for ile id birbirinin yerine yazılır -->
+<br>
+      <input type="checkbox" name="sales" id="sl">
+      <label for="sl">Satış sözleşmesini okudum. </label>  <br>
+
+      <input type="radio" name="gender" id="bay" checked>
+      <label for="bay">Erkek</label> <br>
+
+      <input type="radio" name="gender" id="bayan">
+      <label for="bayan">Kadın</label> <br>
+      <!--  eğer name ismine aynı değer yazılırsa ortak bir grup gibi hareket eder ve birine seçilmesine izin verir 
+      checked==> bos geçilmemesi için seçilebilir -->
+
+      <input type="file" name="avatar" > <br>
+      <!--  dosya seçmek ve eklemek için kullanılır. name field isimleri ile eşleşmesi için belirtilir -->
+
+      <input type="color" name="renk"> <br>
+
+      <input type="range" name="salary"> <br>
+
+      <input type="date" name="dogum"> <br>
+
+      <input type="datetime" name="resmi_tatil"> br 
+
+      <input type="time" name="departureTime"> <br>
+
+      <input type="datetime-local" name="now"> <br>
+
+      <input type="month" name="ay" > <br>
+
+      <input type="week" name="hafta"> <br>
+
+
+      <!-- input dışında select ile kullandıgımız optinal tercihler olan yapılar vardır -->
+
+      <select name="city" >
+        <option value="" disabled selected> Seçiniz</option>
+        <option value="01"> Adana</option>        
+        <!-- value kullanırsa value içerisindeki bilgi DB ye gider -->
+        <option value="">İstanbul</option>
+        <option value="35">İzmir </option>
+        <option value="06">Ankara</option>
+      </select> <br>
+
+      <select name="country" size="5" multiple>
+        <option value="+9">Türkiye</option>
+        <option value="35">Germany </option>
+        <option value="66">France</option>
+      </select> <br>
+
+
+      <!-- text area -->
+
+      <textarea name="" id="" cols="30" rows="5"></textarea>
+
+
+
+
+  </form>
+    </form>
+  </body>
+</html>
